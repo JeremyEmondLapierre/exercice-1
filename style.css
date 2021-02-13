@@ -300,12 +300,14 @@ p {
 @media (min-width: 800px) {
   .principal h3 {
     font-size: 2vw;
+    font-family: 'Libre Baskerville', serif;
   }
 }
 
 .entete img {
-  height: 100px;
-  width: 100px;
+  height: 110px;
+  width: 110px;
+  margin-left: 20px;
 }
 
 .menu {
