@@ -26,16 +26,6 @@ $columns: 5;
 }
 
 
-/****************************************************
-Animation de la section principale
-****************************************************/
-
-
-// @for $i from 1 through $mot {
-//     .principal h3:nth-of-type(#{$i}) {
-//         animation: anim-#{$i} 1s both 0.5*$i#{s};
-//     }
-// }
 
 $paramAnim : (
     1 : translateY(-500px),
@@ -55,14 +45,6 @@ $mot: 5;
 
 @for $i from 1 through $mot {
 
-    // @keyframes anim-#{$i}{
-    //     0%{
-    //         transform: translateValeur(#{$i});
-    //     }
-    //     100%{
-    //         transform: translateValeur(reset);
-    //     }
-    // }
 
     .principal h3:nth-of-type(#{$i}) {
         animation: anim-#{$i} 1s both 0.5*$i#{s};
@@ -109,5 +91,17 @@ $mot: 5;
     }
     100%{
         transform: translateValeur(reset);
+    }
+}
+
+@keyframes AnimTitre{
+    0%{
+        color: white;
+    }
+    50%{
+        color: black;
+    }
+    100%{
+        color: white;
     }
 }

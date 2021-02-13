@@ -202,3 +202,13 @@ p {
     height: 100px;
     width: 100px;
 }
+
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h3{
+        animation: AnimTitre 8s both;
+        animation-iteration-count: infinite;
+    }
+}
