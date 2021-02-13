@@ -58,7 +58,6 @@ p {
 }
 
 .bloc {
-    border: 1px solid #666;
     background-color: transparent;
     color: wheat;
     font-size: 3rem;
@@ -133,7 +132,8 @@ p {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-
+    border-radius: 10px;
+    border: 1px solid rgb(60, 189, 66);
     section {
         display: flex;
         flex-direction: row;
@@ -190,6 +190,9 @@ p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border-radius: 50px;
+    border: 1px solid rgb(60, 62, 189);
+    overflow: hidden;
     h3{
         padding: 1rem 0 1rem 0;
         @include desktop{
@@ -210,6 +213,8 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 10px;
+    border: 1px solid rgb(189, 60, 60);
     h3{
         animation: AnimTitre 8s both;
         animation-iteration-count: infinite;
@@ -219,6 +224,11 @@ p {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    border-radius: 10px;
+    border: 1px solid rgb(189, 60, 172);
+    h4{
+        padding: 5px;
+    }
 }
 a:link{
     color: #efebc5;
