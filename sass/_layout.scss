@@ -8,16 +8,18 @@ body {
     height: 100vh;
     font-family: 'Montserrat', sans-serif;
     font-size: 12px;
-    // background-color: rgb(179, 179, 204);
-    background-color: #AFC7DA;
+    @include desktop{
+        background-color: #AFC7DA;
+    }
+    background-color: couleur(primaire);
     overflow-x: hidden;
 }
 
 
 body::after {
-    content: "";
+    @include desktop{
+        content: "";
     clip-path: polygon(0 0, 80% 0, 50% 100%, 0 100%);
-    //background-color: rgb(43, 71, 233);
     background-color: couleur(primaire);
     position: absolute;
     width: 100%;
@@ -27,6 +29,8 @@ body::after {
     left: 0;
     right: 0;
     z-index: -1;
+    }
+    
 }
 
 h1 {
@@ -65,7 +69,6 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-
     
 }
 .annonce1 img{
@@ -75,7 +78,6 @@ p {
         display: block;
         border-radius: 50%;
         margin-right: 15px;
-       
 }
 
 .grille {
@@ -139,8 +141,6 @@ p {
         flex-direction: row;
         justify-content: space-between;
         width: 50%;
-
-
         div {
             display: flex;
             justify-content: center;
@@ -152,10 +152,7 @@ p {
         }
 
     }
-
-
 }
-
 .annonce1 {
     background-color: #efebc5;
     color: #5e6e81;
@@ -193,6 +190,10 @@ p {
     border-radius: 50px;
     border: 1px solid rgb(60, 62, 189);
     overflow: hidden;
+    @include desktop{
+        background-color: transparent;
+    }
+    background-color: #224766;
     h3{
         padding: 1rem 0 1rem 0;
         @include desktop{
@@ -206,7 +207,7 @@ p {
 .entete img{
     height: 110px;
     width: 110px;
-    margin-left: 20px;
+    margin-left: 40px;
 }
 
 .menu{
@@ -216,6 +217,7 @@ p {
     border-radius: 10px;
     border: 1px solid rgb(189, 60, 60);
     h3{
+        padding: 5px;
         animation: AnimTitre 8s both;
         animation-iteration-count: infinite;
     }
