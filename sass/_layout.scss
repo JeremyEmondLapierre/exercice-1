@@ -148,7 +148,7 @@ p {
             width: 50px;
             height: 50px;
             border-radius: 50%;
-            background-color: blue;
+            background-color: rgb(204, 145, 34);
         }
 
     }
@@ -194,7 +194,8 @@ p {
         padding: 1rem 0 1rem 0;
         @include desktop{
         font-size: 2vw;
-        font-family: 'Libre Baskerville', serif;
+        font-family: 'Fjalla One', sans-serif;
+        color: white;
         }
     }
 }
@@ -212,6 +213,16 @@ p {
     h3{
         animation: AnimTitre 8s both;
         animation-iteration-count: infinite;
-        
     }
+}
+.pied-page{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+a:link{
+    color: #efebc5;
+}
+a:visited{
+    color: #efebc5;
 }
